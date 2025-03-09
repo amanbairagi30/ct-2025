@@ -1,9 +1,9 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 import { Mesh } from "three";
-import { Center, Decal, Text3D, useTexture } from "@react-three/drei";
+import { Decal, useTexture } from "@react-three/drei";
 
-export function Trophy({ scale = 1 }: { scale?: number }) {
+export function Trophy() {
   const trophyRef = useRef<Mesh>(null);
 
   useFrame(() => {
@@ -26,14 +26,6 @@ export function Trophy({ scale = 1 }: { scale?: number }) {
     reflectivity: 0.5,
   };
 
-  const textMaterial = {
-    color: "#FFD700",
-    metalness: 1,
-    roughness: 0.1,
-    clearcoat: 1,
-    clearcoatRoughness: 0.1,
-    reflectivity: 1,
-  };
   const bodyRef = useRef<Mesh>(null);
 
   return (
