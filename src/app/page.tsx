@@ -46,7 +46,7 @@ export default function Home() {
         })}
       </Marquee>
       <Button
-        className="absolute h-12 drop-shadow-xl ring-0 text-xl bg-green-400 text-black hover:bg-green-500 border-white shadow-xl border-2 cursor-pointer bottom-10 z-[10001] w-[90%] md:w-fit md:left-[80%] lg:left-[85%] md:translate-x-0 left-1/2 -translate-x-1/2"
+        className="absolute h-12 drop-shadow-xl ring-0 text-xl bg-green-400 text-black hover:bg-green-500 border-white shadow-xl border-2 cursor-pointer bottom-32 md:bottom-10 z-[10001] w-[90%] md:w-fit md:left-[80%] lg:left-[85%] md:translate-x-0 left-1/2 -translate-x-1/2"
         onClick={() => confettiRef.current?.fire({})}
       >
         Cheers for INDIA
